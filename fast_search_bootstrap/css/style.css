@@ -747,6 +747,17 @@ button:focus, a:focus {
   }
   .navbar-btn {
     display: block !important;
+    margin-left: auto;
+  }
+  .navbar-expand-md .navbar-nav {
+    flex-direction: column !important;
+  }
+
+  .navbar-nav {
+    width: 100% !important;
+  }
+  .nav-link {
+    width: 100% !important;
   }
 }
 
@@ -772,3 +783,14 @@ label.error {
   margin: -5px 0 20px;
   display: block;
 }
+
+.error {
+  background: green;
+  display: block;
+}
+
+.not-error {
+  display: none;
+}
+
+@
