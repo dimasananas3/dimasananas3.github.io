@@ -49,18 +49,20 @@ $(document).ready(function(){
     rules: {
       email: {
         required: true,
-        email: true,
-
+        email: true
       },
       name: {
         required: true,
-        minlength: 3
+        validateFullName: true
       }
     },
     messages: {
-      email: 'Введите корректный Email',
-      name: 'Введите Ваше имя'
+      email: 'Введите корректный Email'
     }
   });
+
+  $.validator.addMethod("validateFullName", function(value, element){
+    return /^([a-zA-Z.'-]{1,}\s'?-?[a-zA-Z.'-]{1,}\s?([a-zA-Z.'-]{1,})?)/.test(value);
+  }, "Введите Ваше полное имя");
 
 });
