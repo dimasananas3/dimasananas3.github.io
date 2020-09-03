@@ -784,13 +784,4 @@ label.error {
   display: block;
 }
 
-.error {
-  background: green;
-  display: block;
-}
 
-.not-error {
-  display: none;
-}
-
-@
