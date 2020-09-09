@@ -57,7 +57,8 @@ $(document).ready(function(){
       }
     },
     messages: {
-      email: 'Введите корректный Email'
+      email: 'Введите корректный Email',
+      name: 'Введите Ваше имя'
     }
   });
 
