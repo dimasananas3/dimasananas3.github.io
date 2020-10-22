@@ -749,4 +749,31 @@ a {
     background-image: url(../img/bg_media.png);
   }
 }
+
+@media screen and (max-height: 450px) {
+  .header__title, .header__try {
+    font-size: 19px;
+  }
+  .spiner__btn {
+    bottom: 142px;
+    font-size: 13px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .spiner__roll {
+    width: 190px;
+    height: 190px;
+    left: calc(50% - 95px);
+    bottom: 53px;
+  }
+  .spiner {
+    height: 265px;
+    width: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=style.css.map */
