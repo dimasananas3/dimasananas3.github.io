@@ -62,8 +62,4 @@ $(document).ready(function(){
     }
   });
 
-  $.validator.addMethod("validateFullName", function(value, element){
-    return /^([a-zA-Z.'-]{1,}\s'?-?[a-zA-Z.'-]{1,}\s?([a-zA-Z.'-]{1,})?)/.test(value);
-  }, "Введите Ваше полное имя");
-
 });
